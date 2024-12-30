@@ -19,8 +19,8 @@ def solution():
 
 def parse_day_and_problem() -> tuple[int, int]:
   parser = argparse.ArgumentParser(prog="AdventOfCodeRunner")
-  parser.add_argument("day")
-  parser.add_argument("problem")
+  parser.add_argument("day", type=int)
+  parser.add_argument("problem", type=int, nargs="?", default=1)
   args = parser.parse_args()
   return(int(args.day), int(args.problem))
 
