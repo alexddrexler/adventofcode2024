@@ -1,7 +1,7 @@
 """Solution for https://adventofcode.com/2024/day/20#part2."""
 from collections import defaultdict
 
-from day20 import problem1
+from solutions.year2024.day20 import part1
 
 
 def find_shortcuts(distances, min_diff=1):
@@ -35,8 +35,8 @@ def find_shortcuts(distances, min_diff=1):
 
 def solution():
   """Solve the problem."""
-  maze = problem1.read_maze()
-  distances = problem1.get_distances_from_end(maze)
+  maze = part1.read_maze()
+  distances = part1.get_distances_from_end(maze)
   shortcuts = find_shortcuts(distances, min_diff=100)
   # for i in sorted(shortcuts.keys()):
   #   print(f"{i}: {shortcuts[i]}")

@@ -3,7 +3,7 @@ from util import read
 
 
 def read_coords(n=None):
-  content = read.read_file("day18/input1.txt")
+  content = read.read_input()
   rows = content.split("\n")
   if n is None:
     n = len(rows)

@@ -1,5 +1,4 @@
 """Solution for https://adventofcode.com/2024/day/15#part2."""
-from day15 import problem1
 from util import read
 
 
@@ -22,7 +21,7 @@ LEFT = 3
 
 def read_grid_and_orders(content=None):
   if content is None:
-    content = read.read_file("day15/input1.txt")
+    content = read.read_input()
   grid_content, order_content = content.split("\n\n")
   grid = []
   for row in grid_content.split("\n"):

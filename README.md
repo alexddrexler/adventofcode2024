@@ -8,7 +8,7 @@ This repo includes alexddrexler's solutions for [Advent of Code 2024](https://ad
 
 To run an existing solution, or to create a new solution, run the following:
 ```sh
-python3 run.py DAY [PART]
+python3 run.py YEAR DAY [PART]
 ```
 
 ## Common utils

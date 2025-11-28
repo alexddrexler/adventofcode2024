@@ -44,7 +44,7 @@ LEFT = 3
 
 def read_grid_and_orders(content=None):
   if content is None:
-    content = read.read_file("day15/input1.txt")
+    content = read.read_input()
   grid_content, order_content = content.split("\n\n")
   grid = [list(row) for row in grid_content.split("\n")]
   orders = []

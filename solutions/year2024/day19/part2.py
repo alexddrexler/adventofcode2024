@@ -12,7 +12,7 @@ def add_to_memo(pattern, count):
 
 
 def read_input():
-  content = read.read_file("day19/input1.txt")
+  content = read.read_input()
   towels_str, patterns_str = content.split("\n\n")
   towels = [towel.strip() for towel in towels_str.split(",")]
   patterns = patterns_str.split("\n")

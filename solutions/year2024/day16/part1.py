@@ -9,7 +9,7 @@ LEFT = 3
 
 
 def read_maze():
-  content = read.read_file("day16/input1.txt")
+  content = read.read_input()
   return [list(row) for row in content.split("\n")]
 
 

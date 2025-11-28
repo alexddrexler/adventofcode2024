@@ -1,5 +1,5 @@
 """Solution for https://adventofcode.com/2024/day/16#part2."""
-from day16 import problem1
+from solutions.year2024.day16 import part1
 
 
 UP = 0
@@ -68,6 +68,6 @@ def get_best_paths(maze, memo):
 
 def solution():
   """Solve the problem."""
-  maze = problem1.read_maze()
-  memo = problem1.run_maze(maze)
+  maze = part1.read_maze()
+  memo = part1.run_maze(maze)
   return len(get_best_paths(maze, memo))

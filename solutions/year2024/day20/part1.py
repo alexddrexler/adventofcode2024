@@ -23,7 +23,7 @@ TEST = """###############
 
 def read_maze(content=None):
   if content is None:
-    content = read.read_file("day20/input1.txt")
+    content = read.read_input()
   maze = []
   for row in content.split("\n"):
     maze.append(list(row))
