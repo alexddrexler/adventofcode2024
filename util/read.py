@@ -1,11 +1,20 @@
 """Common util functions for reading inputs."""
 import os
+from typing import Any
 
 from util import global_vars
 
 
 def read_input() -> str:
   return read_file_from_workdir("input.txt")
+
+
+def read_input_grid(type=str) -> list[list[Any]]:
+  data = read_input()
+  grid = []
+  for row in data.split("\n"):
+    grid.append([type(c) for c in row])
+  return grid
 
 
 def read_file_from_workdir(filename) -> str:
