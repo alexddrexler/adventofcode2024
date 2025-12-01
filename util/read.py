@@ -6,6 +6,7 @@ from util import global_vars
 
 
 def read_input() -> str:
+  """Read input.txt from current day dir."""
   return read_file_from_workdir("input.txt")
 
 
