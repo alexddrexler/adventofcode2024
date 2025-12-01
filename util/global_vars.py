@@ -1,3 +1,5 @@
+"""Global variables, set in run.py."""
+
 VARS = {}
 
 
