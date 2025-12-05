@@ -10,8 +10,8 @@ def read_input() -> str:
   return read_file_from_workdir("input.txt")
 
 
-def read_input_grid(type=str) -> list[list[Any]]:
-  data = read_input()
+def read_input_grid(type=str, test_inp=None) -> list[list[Any]]:
+  data = test_inp if test_inp else read_input()
   grid = []
   for row in data.split("\n"):
     grid.append([type(c) for c in row])
